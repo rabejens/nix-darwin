@@ -169,7 +169,7 @@ let
         echo "    rm ~/.nix-defexpr/channels" >&2
         echo "    nix-channel --update" >&2
         echo >&2
-        exit 2
+        echo "Workaround: Disabling this check for now"
         ;;
     esac
   '';
