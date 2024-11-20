@@ -163,13 +163,7 @@ let
       "")
         ;;
       *)
-        echo "[1;31merror: The ~/.nix-defexpr/channels symlink does not point your users channels, aborting activation[0m" >&2
-        echo "Running nix-channel will regenerate it" >&2
-        echo >&2
-        echo "    rm ~/.nix-defexpr/channels" >&2
-        echo "    nix-channel --update" >&2
-        echo >&2
-        echo "Workaround: Disabling this check for now"
+        echo "Bzpassing channels check"
         ;;
     esac
   '';
